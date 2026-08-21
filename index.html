@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iker Rodríguez | Candidato a delegado de 3º ESO</title>
+
+    <meta
+        name="description"
+        content="Web de campaña y portal de transparencia de la candidatura a delegado de 3º ESO."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER / CAMPAÑA
+========================= -->
+
+<header class="hero" id="inicio">
+
+    <nav class="navbar">
+
+        <div class="logo">
+            3º ESO <span>·</span> 2026/27
+        </div>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#programa">Programa</a>
+            <a href="#transparencia">Transparencia</a>
+            <a href="#propuestas">Propuestas</a>
+            <a href="#diario">Diario</a>
+        </div>
+
+    </nav>
+
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <span class="small-title">
+                CANDIDATURA A DELEGADO/A
+            </span>
+
+            <h1>
+                Una clase que
+                <span>cuenta contigo.</span>
+            </h1>
+
+            <p>
+                Más participación, mejor comunicación
+                y un delegado que rinda cuentas.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#programa" class="button primary">
+                    Ver programa
+                </a>
+
+                <a href="#transparencia" class="button secondary">
+                    Ver transparencia
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <strong id="heroCompleted">0</strong>
+                    <span>Cumplidas</span>
+                </div>
+
+                <div>
+                    <strong id="heroProcess">0</strong>
+                    <span>En proceso</span>
+                </div>
+
+                <div>
+                    <strong id="heroTotal">0</strong>
+                    <span>Compromisos</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--
+            FOTO DEL CANDIDATO
+
+            Mete tu foto en:
+            assets/mi-foto.jpg
+        -->
+
+        <div class="candidate">
+
+            <div class="candidate-glow"></div>
+
+            <img
+                src="assets/mi-foto.jpg"
+                alt="Foto del candidato"
+            >
+
+            <div class="candidate-name">
+              IKER RODRÍGUEZ
+                <small>CANDIDATO</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================
+     PRESENTACIÓN
+========================= -->
+
+<section class="section introduction">
+
+    <div class="container two-columns">
+
+        <div>
+
+            <span class="section-label">
+                LA CANDIDATURA
+            </span>
+
+            <h2>
+                Prometer está bien.
+                <span>Cumplir y explicarlo, mejor.</span>
+            </h2>
+
+        </div>
+
+        <div class="text">
+
+            <p>
+                Esta candidatura quiere representar a toda la clase,
+                escuchar propuestas y explicar qué ocurre con cada
+                compromiso.
+            </p>
+
+            <p>
+                Un delegado no puede decidirlo todo. Por eso esta web
+                también indicará cuándo una propuesta depende del tutor,
+                del profesorado o del centro.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROGRAMA
+========================= -->
+
+<section class="section" id="programa">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    PROGRAMA ELECTORAL
+                </span>
+
+                <h2>
+                    Mis compromisos
+                </h2>
+
+            </div>
+
+            <span class="edit-label">
+                Editable desde script.js
+            </span>
+
+        </div>
+
+
+        <div
+            id="programGrid"
+            class="program-grid"
+        ></div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     TRANSPARENCIA
+========================= -->
+
+<section
+    class="section transparency"
+    id="transparencia"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    PORTAL DE TRANSPARENCIA
+                </span>
+
+                <h2>
+                    ¿Qué ha pasado con mis promesas?
+                </h2>
+
+            </div>
+
+            <span
+                id="complianceBadge"
+                class="transparency-badge"
+            >
+                0% cumplido
+            </span>
+
+        </div>
+
+
+        <!-- ESTADÍSTICAS -->
+
+        <div class="dashboard">
+
+            <div class="dashboard-main">
+
+                <div
+                    class="progress-circle"
+                    id="progressCircle"
+                >
+
+                    <span id="complianceNumber">
+                        0%
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Índice de cumplimiento
+                    </strong>
+
+                    <p>
+                        Porcentaje de compromisos
+                        cumplidos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <strong id="countCompleted">
+                    0
+                </strong>
+
+                <span>
+                    🟢 Cumplidas
+                </span>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <strong id="countProcess">
+                    0
+                </strong>
+
+                <span>
+                    🟡 En proceso
+                </span>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <strong id="countFailed">
+                    0
+                </strong>
+
+                <span>
+                    🔴 No cumplidas
+                </span>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <strong id="countOutside">
+                    0
+                </strong>
+
+                <span>
+                    ⚪ Fuera de competencias
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FILTROS -->
+
+        <div class="filters">
+
+            <button
+                class="filter active"
+                data-filter="all"
+            >
+                Todas
+            </button>
+
+            <button
+                class="filter"
+                data-filter="cumplida"
+            >
+                🟢 Cumplidas
+            </button>
+
+            <button
+                class="filter"
+                data-filter="proceso"
+            >
+                🟡 En proceso
+            </button>
+
+            <button
+                class="filter"
+                data-filter="no"
+            >
+                🔴 No cumplidas
+            </button>
+
+            <button
+                class="filter"
+                data-filter="fuera"
+            >
+                ⚪ Fuera de competencias
+            </button>
+
+        </div>
+
+
+        <!-- PROMESAS -->
+
+        <div
+            id="promiseGrid"
+            class="promise-grid"
+        ></div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROPUESTAS
+========================= -->
+
+<section
+    class="section"
+    id="propuestas"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    PARTICIPACIÓN
+                </span>
+
+                <h2>
+                    Propuestas de la clase
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="two-columns">
+
+
+            <div>
+
+                <p class="muted">
+
+                    Aquí puedes registrar propuestas,
+                    ideas y problemas de la clase.
+
+                </p>
+
+
+                <form
+                    id="proposalForm"
+                    class="proposal-form"
+                >
+
+                    <label>
+
+                        Propuesta
+
+                        <input
+                            id="proposalTitle"
+                            type="text"
+                            placeholder="Ej. Organizar un torneo"
+                            required
+                        >
+
+                    </label>
+
+
+                    <label>
+
+                        Descripción
+
+                        <textarea
+                            id="proposalDesc"
+                            placeholder="Explica la propuesta..."
+                        ></textarea>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="button primary dark-button"
+                    >
+                        Añadir propuesta
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <div
+                id="proposalList"
+                class="proposal-list"
+            ></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     DIARIO
+========================= -->
+
+<section
+    class="section diary-section"
+    id="diario"
+>
+
+    <div class="container">
+
+        <span class="section-label">
+            SEGUIMIENTO
+        </span>
+
+        <h2>
+            Diario del delegado
+        </h2>
+
+
+        <div
+            id="diary"
+            class="timeline"
+        ></div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="final-section">
+
+    <div class="container">
+
+        <span class="section-label">
+            UN MANDATO ABIERTO
+        </span>
+
+        <h2>
+            La clase también decide.
+        </h2>
+
+        <p>
+            Las propuestas, críticas y dudas tienen un sitio aquí.
+        </p>
+
+        <a
+            href="#propuestas"
+            class="button primary"
+        >
+            Hacer una propuesta
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+     SOLO GRADIENTE
+========================= -->
+
+<footer>
+
+    <div class="footer-gradient"></div>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
