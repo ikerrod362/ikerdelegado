@@ -122,16 +122,16 @@ const PROMISES = [
             "Crear un sistema de avisos",
 
         status:
-            "cumplida",
+            "no",
 
         date:
-            "15/09/2026",
+            "21/08/2026",
 
         update:
-            "22/09/2026",
+            "??/??/????",
 
         detail:
-            "Se creó el sistema de avisos y se explicó su funcionamiento."
+            "Se creará un sistema de avisos a la delegación y se explicará su funcionamiento."
 
     },
 
@@ -144,16 +144,16 @@ const PROMISES = [
             "Recoger propuestas periódicamente",
 
         status:
-            "proceso",
+            "no",
 
         date:
-            "15/09/2026",
+            "21/08/2026",
 
         update:
-            "28/09/2026",
+            "??/??/????",
 
         detail:
-            "Ya se han recibido las primeras propuestas. El sistema continuará activo."
+            "Se recibirán las primeras propuestas. El sistema continuará activo hasta final de mandato."
 
     },
 
@@ -163,19 +163,19 @@ const PROMISES = [
         id: "003",
 
         title:
-            "Organizar una actividad",
+            "Organizar actividades",
 
         status:
-            "proceso",
+            "no",
 
         date:
-            "20/09/2026",
+            "21/08/2026",
 
         update:
-            "01/10/2026",
+            "??/??/????",
 
         detail:
-            "La propuesta ha sido trasladada al tutor y está pendiente de concretar."
+            "Las propuestas son trasladadas al tutor y están pendientes de concretar."
 
     },
 
@@ -191,10 +191,10 @@ const PROMISES = [
             "fuera",
 
         date:
-            "20/09/2026",
+            "21/08/2026",
 
         update:
-            "20/09/2026",
+            "??/??/????",
 
         detail:
             "Esta decisión no corresponde al delegado. Puede trasladarse como petición, pero no garantizarse."
@@ -207,19 +207,19 @@ const PROMISES = [
         id: "005",
 
         title:
-            "Conseguir una excursión concreta",
+            "Conseguir una excursión en concreto",
 
         status:
             "no",
 
         date:
-            "25/09/2026",
+            "21/08/2026",
 
         update:
-            "10/10/2026",
+            "??/??/????",
 
         detail:
-            "La propuesta no pudo realizarse por falta de disponibilidad."
+            "La propuesta no se podrá realizar por falta de disponibilidad."
 
     }
 
